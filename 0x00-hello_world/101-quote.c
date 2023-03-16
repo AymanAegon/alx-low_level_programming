@@ -11,9 +11,9 @@ int main(void)
 	char str2[28] = "\" - Dora Korpar, 2015-10-19\n";
 	int i;
 
-	for( i = 0; i < 31; i++)
+	for (i = 0; i < 31; i++)
 		putchar(str1[i]);
-	for( i = 0; i < 28; i++)
+	for (i = 0; i < 28; i++)
 		putchar(str2[i]);
 	return (1);
 }
