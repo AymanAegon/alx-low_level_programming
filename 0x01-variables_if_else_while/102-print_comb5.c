@@ -28,10 +28,11 @@ int main(void)
 						putchar(32);
 						putchar(k);
 						putchar(l);
-						if (i + j >= 114)
-							continue;
-						putchar(44);
-						putchar(32);
+						if ((i < 57) || (j < 56))
+						{
+							putchar(44);
+							putchar(32);
+						}
 					}
 				}
 			}
