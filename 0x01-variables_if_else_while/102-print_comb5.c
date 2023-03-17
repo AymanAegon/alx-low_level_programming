@@ -19,7 +19,11 @@ int main(void)
 		{
 			for (k = i; k < 58; k++)
 			{
-				for (l = j + 1; l < 58; l++)
+				if (i == k)
+					l = j + 1;
+				else
+					l = j;
+				for (;l < 58; l++)
 				{
 					putchar(i);
 					putchar(j);
