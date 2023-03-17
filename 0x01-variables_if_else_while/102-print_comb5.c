@@ -23,16 +23,16 @@ int main(void)
 				{
 					if ((i - 48) * 10 + j - 48 < (k - 48) * 10 + l - 48)
 					{
-						putchar(i);
-						putchar(j);
+					putchar(i);
+					putchar(j);
+					putchar(32);
+					putchar(k);
+					putchar(l);
+					if ((i < 57) || (j < 56))
+					{
+						putchar(44);
 						putchar(32);
-						putchar(k);
-						putchar(l);
-						if ((i < 57) || (j < 56))
-						{
-							putchar(44);
-							putchar(32);
-						}
+					}
 					}
 				}
 			}
