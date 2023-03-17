@@ -28,7 +28,7 @@ int main(void)
 						putchar(32);
 						putchar(k);
 						putchar(l);
-						if ((i - 48) * 10 + j - 48 < 98)
+						if (((i - 48) * 10 + j - 48) < 98)
 						{
 							putchar(44);
 							putchar(32);
