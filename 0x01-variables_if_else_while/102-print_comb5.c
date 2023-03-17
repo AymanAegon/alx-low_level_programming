@@ -19,21 +19,20 @@ int main(void)
 		{
 			for (k = i; k < 58; k++)
 			{
-				if (i == k)
-					l = j + 1;
-				else
-					l = j;
-				for (; l < 58; l++)
+				for (l = 48; l < 58; l++)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(32);
-					putchar(k);
-					putchar(l);
-					if ((i < 57) || (j < 56))
+					if ((i - 48) * 10 + j - 48 < (k - 48) * 10 + l - 48)
 					{
-						putchar(44);
+						putchar(i);
+						putchar(j);
 						putchar(32);
+						putchar(k);
+						putchar(l);
+						if ((i < 57) || (j < 56))
+						{
+							putchar(44);
+							putchar(32);
+						}
 					}
 				}
 			}
