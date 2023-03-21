@@ -9,6 +9,17 @@
  *
  */
 
+int _abs(int n)
+{
+	if (n < 0)
+	{
+		return (-n);
+	}
+	else
+	{
+		return (n);
+	}
+}
 void print_to_98(int n)
 {
 	int i, a;
