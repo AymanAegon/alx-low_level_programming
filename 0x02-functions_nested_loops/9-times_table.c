@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer -  prints the 9 times table
+ * times_table -  prints the 9 times table
  *
  *
  * Return: Always void
