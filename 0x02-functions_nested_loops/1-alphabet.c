@@ -1,15 +1,15 @@
 #include <stdio.h>
-/* more headers goes there */
+/* headers goes here */
 #include "_putchar.c"
 
 /**
- * main - Print alphabets 1
+ * function - Print alphabets 1
  *
  *
  * Return: Always 0 (Success)
  *
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 	for (i = 97; i < 123; i++)
@@ -17,5 +17,4 @@ int main(void)
 		_putchar(i);
 	}
 	_putchar('\n');
-	return (0);
 }
