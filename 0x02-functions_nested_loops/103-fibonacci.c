@@ -12,11 +12,11 @@
 int main(void)
 {
 	long a, b, c, s;
-	
+
 	a = 1;
 	b = 1;
 	s = 0;
-	while(b < 4000000)
+	while (b < 4000000)
 	{
 		if (b % 2 == 0)
 			s += b;
