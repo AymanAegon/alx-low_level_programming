@@ -8,6 +8,14 @@
  * Return: Always void
  *
  */
+/**
+ * _abs - computes the absolute value of an integer.
+ *
+ * @n: the number to calc
+ *
+ * Return: the absolute value of n
+ *
+ */
 
 int _abs(int n)
 {
