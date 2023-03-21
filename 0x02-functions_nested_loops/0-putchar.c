@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
  * main - Entry point
  * Description: 'prints _putchar to stdout'
- * Retuen: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
