@@ -17,9 +17,12 @@ void print_to_98(int n)
 	{
 		for (i = n; i < 98; i++)
 		{
+			a = i;
 			if (i < 0)
+			{
 				_putchar('-');
-			a = i * -1;
+				a = i * -1;
+			}
 			if (a >= 100)
 				_putchar('0' + a / 100);
 			if (a >= 10)
