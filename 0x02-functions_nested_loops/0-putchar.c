@@ -4,7 +4,6 @@
  * Description: 'prints _putchar to stdout'
  * Retuen: Always 0 (Success)
  */
-
 int main(void)
 {
 	_putchar('_');
