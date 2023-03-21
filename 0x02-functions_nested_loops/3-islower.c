@@ -4,6 +4,7 @@
 /**
  * _islower - is a character lowercase
  *
+ * @c: The character to test
  *
  * Return: 1 if lowercase. else 0
  *
