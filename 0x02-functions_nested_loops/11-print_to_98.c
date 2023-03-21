@@ -8,26 +8,7 @@
  * Return: Always void
  *
  */
-/**
- * _abs - computes the absolute value of an integer.
- *
- * @n: the number to calc
- *
- * Return: the absolute value of n
- *
- */
 
-int _abs(int n)
-{
-	if (n < 0)
-	{
-		return (-n);
-	}
-	else
-	{
-		return (n);
-	}
-}
 void print_to_98(int n)
 {
 	int i, a;
@@ -38,7 +19,7 @@ void print_to_98(int n)
 		{
 			if (i < 0)
 				_putchar('-');
-			a = _abs(i);
+			a = i * -1;
 			if (a >= 100)
 				_putchar('0' + a / 100);
 			if (a >= 10)
