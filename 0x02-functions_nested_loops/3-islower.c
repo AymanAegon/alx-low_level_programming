@@ -5,12 +5,12 @@
  * _islower - is a character lowercase
  *
  *
- * Return: 1 if lowercase
+ * Return: 1 if lowercase. else 0
  *
  */
-int _islower(char c)
+int _islower(int c)
 {
-	if (islower(c) == 2)
+	if (c >= 97 && c <= 122)
 		return (1);
 	else
 		return (0);
