@@ -12,7 +12,7 @@
 int main(void)
 {
 	long i, a, b, c;
-	
+
 	a = 1;
 	b = 1;
 	for (i = 0; i < 50; i++)
