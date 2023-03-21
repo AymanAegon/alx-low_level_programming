@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	long long i, a, b, c;
+	long i, a, b, c;
 	
 	a = 1;
 	b = 1;
