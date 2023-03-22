@@ -8,6 +8,9 @@
 
 int main(void)
 {
-	printf(positive_or_negative(0));
+	int n;
+
+	n = 0;
+	printf(positive_or_negative(n));
 	return (0);
 }
