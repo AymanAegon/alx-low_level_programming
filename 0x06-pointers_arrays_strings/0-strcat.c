@@ -4,7 +4,7 @@
  * main - concatenates two strings.
  * @dest: destination
  * @src: source
- * Return: Always 0.
+ * Return: concatenation
  */
 char *_strcat(char *dest, char *src)
 {
