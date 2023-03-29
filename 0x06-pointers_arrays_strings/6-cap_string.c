@@ -9,12 +9,14 @@
 char *cap_string(char *s)
 {
 	int i, j;
-	char *a = " \n\t,;.!?\"(){}";
+	char a[13] = " \n\t,;.!?\"(){}";
 	int b;
 
 	b = 0;
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
 		for (j = 0; j < 13; j++)
 		{
 			if (a[j] == s[i])
