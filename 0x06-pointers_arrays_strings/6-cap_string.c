@@ -10,8 +10,9 @@ char *cap_string(char *s)
 {
 	int i, j;
 	char *a = " \n\t,;.!?\"(){}";
-	int b = 0;
+	int b;
 
+	b = 0;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 13; j++)
