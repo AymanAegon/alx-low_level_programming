@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string>
 /**
  * main - concatenates two strings.
  * @dest: destination
