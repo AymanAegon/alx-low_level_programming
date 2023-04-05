@@ -12,8 +12,7 @@ int fun(int a, int b)
 		return (a);
 	if (a * a < b)
 		return (fun(a + 1, b));
-	if (a * a > b)
-		return (-1);
+	return (-1);
 }
 
 /**
