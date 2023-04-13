@@ -19,7 +19,17 @@ char **strtow(char *str)
     k = 0;
     j = 0;
     for (i = 0; str[i] != '\0'; i++)
-        size++;
+    {
+        if (str[i] == ' ')
+            k = 1;
+        if (str[i] != ' ' && k == 1)
+        {
+            k = 0;
+            size++;
+        }
+    }
+    k = 0;
+    printf("size = %d\n", size);
     arr = (char **)malloc(sizeof(char *) * size);
     if (arr == NULL)
         return (NULL);
@@ -31,9 +41,12 @@ char **strtow(char *str)
         {
             for (l = 0; str[l + i] != ' '; l++)
             arr[j] = (char *)malloc(sizeof(char) * (l + 1));
+            if (arr[j] == NULL)
+                return (NULL);
             for (l = 0; str[l + i] != ' '; l++)
                 arr[j][l] = str[l + i];
             arr[j][l + 1] = '\0';
+            j++;
         }
     }
     
