@@ -10,11 +10,9 @@
 void print_all(const char * const format, ...)
 {
 	va_list ptr;
-	int i;
-	char c, *step, *str;
+	int i = 0;
+	char c, *step = "", *str;
 
-	i = 0;
-	step = "";
 	va_start(ptr, format);
 	if (!format)
 	{
