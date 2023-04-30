@@ -5,8 +5,10 @@
  *
  * Return: void
  */
-void free_listint(listint_t *head)
+void free_listint(listint_t *hea
 {
-	if (head)
-		free(head);
+	if (!head)
+		return;
+	free_listint(head->next);
+	free(head);
 }
