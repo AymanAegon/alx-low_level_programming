@@ -14,10 +14,14 @@ const listint_t **a(const listint_t **old, size_t size, const listint_t *new)
 
 	arr = malloc(size * sizeof(listint_t *));
 	if (!arr)
+	{
+		free(old);
 		exit(98);
+	}
 	for (i = 0; i < size - 1; i++)
 		arr[i] = old[i];
 	arr[i] = new;
+	free(old);
 	return (arr);
 }
 /**
@@ -38,6 +42,7 @@ size_t print_listint_safe(const listint_t *head)
 			if (arr[i] == head)
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
+				free(arr);
 				return (size);
 			}
 		}
@@ -46,5 +51,6 @@ size_t print_listint_safe(const listint_t *head)
 		arr = a(arr, size, head);
 		head = head->next;
 	}
+	free(arr);
 	return (n);
 }
