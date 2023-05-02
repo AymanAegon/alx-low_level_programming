@@ -33,7 +33,7 @@ const listint_t **a(const listint_t **old, size_t size, const listint_t *new)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t n = 0, size = 0, i;
-	const listint_t **arr;
+	const listint_t **arr = NULL;
 
 	while (head)
 	{
