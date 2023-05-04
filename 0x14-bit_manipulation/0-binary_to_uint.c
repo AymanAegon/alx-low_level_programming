@@ -11,6 +11,7 @@
 unsigned int _pow(int x, unsigned int y)
 {
 	unsigned int i, s = 1;
+
 	for (i = 0; i < y; i++)
 		s *= x;
 	return (s);
