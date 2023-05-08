@@ -37,7 +37,7 @@ int main(int ac, char **av)
 			exit(98);
 		}
 
-		w = write(to, buf, r);
+		w = write(f_to, buf, r);
 		if (f_to == -1 || w == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
@@ -45,7 +45,7 @@ int main(int ac, char **av)
 			exit(99);
 		}
 
-		r = read(from, buf, 1024);
+		r = read(f_from, buf, 1024);
 		f_to = open(av[2], O_WRONLY | O_APPEND);
 
 	} while (r > 0);
