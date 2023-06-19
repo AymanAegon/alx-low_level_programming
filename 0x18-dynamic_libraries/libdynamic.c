@@ -51,7 +51,17 @@ int _abs(int n)
 	else
 		return (n);
 }
-int _isupper(int c);
+/**
+ * _isupper -  checks for uppercase character
+ * @c: the character
+ * Return: 1 if uppercase else 0
+ */
+int _isupper(int c)
+{
+	if (c >= 65 && c <= 90)
+		return (1);
+	return (0);
+}
 /**
  * _isdigit -  checks for a digit
  * @c: the digit
