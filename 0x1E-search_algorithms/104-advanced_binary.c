@@ -17,17 +17,20 @@ int support(int *array, size_t l, size_t r, int value)
 
 	if (l > r)
 		return (-1);
-	printf("Searching in array: ");
-	for (i = l; i < r; i++)
-		printf("%d, ", array[i]);
-	printf("%d\n", array[i]);
+	if (mid == (l + r) / 2)
+	{
+		printf("Searching in array: ");
+		for (i = l; i < r; i++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
+	}
 
 	if (value > array[mid])
-		return (support(array, mid + 1, r, value));
+		return (support(array, mid + 1, r, (mid + r + 1) / 2, value));
 	else if (value < array[mid])
-		return (support(array, l, mid - 1, value));
-	while (mid > 0 && value == array[mid - 1])
-		mid--;
+		return (support(array, l, mid - 1, (l + mid - 1) / 2, value));
+	if (mid > 0 && value == array[mid - 1] && value == array[mid])
+		return (support(array, l, r, mid + 1, value));
 	return (mid);
 }
 
