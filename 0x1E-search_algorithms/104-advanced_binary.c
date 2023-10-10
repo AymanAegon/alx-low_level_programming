@@ -7,6 +7,7 @@
  * @array: a pointer to the first element of the array to search in
  * @l: left index
  * @r: right index
+ * @mid: middle index
  * @value: the value to search for
  *
  * Return: the index where value is located
