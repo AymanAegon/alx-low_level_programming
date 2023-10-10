@@ -26,12 +26,9 @@ int support(int *array, size_t l, size_t r, int value)
 		return (support(array, mid + 1, r, value));
 	else if (value < array[mid])
 		return (support(array, l, mid - 1, value));
-	else
-	{
-		while (mid > 0 && value == array[mid - 1])
-			mid--;
-		return (mid);
-	}
+	while (mid > 0 && value == array[mid - 1])
+		mid--;
+	return (mid);
 }
 
 /**
