@@ -11,9 +11,9 @@
  *
  * Return: the index where value is located
  */
-int support(int *array, size_t l, size_t r, int value)
+int support(int *array, size_t l, size_t r, size_t mid, int value)
 {
-	size_t mid = (l + r) / 2, i;
+	size_t i;
 
 	if (l > r)
 		return (-1);
@@ -48,5 +48,5 @@ int advanced_binary(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-	return (support(array, 0, size - 1, value));
+	return (support(array, 0, size - 1, (size - 1) / 2, value));
 }
